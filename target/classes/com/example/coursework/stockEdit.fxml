@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="424.0" prefWidth="316.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.stockEditController">
+    <children>
+        <Pane layoutX="-3.0" layoutY="1.0" prefHeight="48.0" prefWidth="322.0" style="-fx-background-color: #39A67F;">
+            <children>
+                <Label alignment="CENTER" layoutX="102.0" layoutY="12.0" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #39A67F;" text="Add Stock" />
+            </children>
+        </Pane>
+        <Button fx:id="addStockBtn" layoutX="214.0" layoutY="167.0" mnemonicParsing="false" onAction="#AddStock" text="Add stock" />
+        <TextField fx:id="stockAddAmountField" layoutX="65.0" layoutY="119.0" prefHeight="25.0" prefWidth="188.0" promptText="Enter the stock add amount" />
+        <Button fx:id="removeStockBtn" layoutX="203.0" layoutY="378.0" mnemonicParsing="false" onAction="#removeStock" text="Remove Stock" />
+        <TextField fx:id="StockRemovaAmountField" layoutX="57.0" layoutY="325.0" prefHeight="25.0" prefWidth="188.0" promptText="Enter the stock remove amount" />
+      <Pane layoutX="1.0" layoutY="212.0" prefHeight="48.0" prefWidth="322.0" style="-fx-background-color: #39A67F;">
+         <children>
+            <Label alignment="CENTER" layoutX="102.0" layoutY="12.0" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #39A67F;" text="Remove Stock" />
+         </children>
+      </Pane>
+      <Label fx:id="removeStockLbl" alignment="CENTER" layoutX="14.0" layoutY="355.0" prefHeight="17.0" prefWidth="282.0" />
+      <Label fx:id="addStockLbl" alignment="CENTER" layoutX="18.0" layoutY="150.0" prefHeight="17.0" prefWidth="282.0" />
+      <TextField fx:id="removeStockProductNameField" layoutX="57.0" layoutY="281.0" prefHeight="25.0" prefWidth="188.0" promptText="Enter the Product Name" />
+      <TextField fx:id="addStockProductNameField" layoutX="64.0" layoutY="79.0" prefHeight="25.0" prefWidth="188.0" promptText="Enter the Product Name" />
+      <Button fx:id="addStockClearBtn" layoutX="39.0" layoutY="167.0" mnemonicParsing="false" onAction="#AddStockClear" text="Clear" />
+      <Button fx:id="removeStockClearBtn" layoutX="31.0" layoutY="378.0" mnemonicParsing="false" onAction="#removeStockClear" text="Clear" />
+    </children>
+</AnchorPane>

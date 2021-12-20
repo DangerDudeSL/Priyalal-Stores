@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="335.0" prefWidth="557.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.ProductTableController">
+   <children>
+      <TableView fx:id="productTable" layoutX="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="247.0" prefWidth="558.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="255.0" text="Product Name" />
+          <TableColumn fx:id="idColumn" prefWidth="164.0" text="Product id" />
+            <TableColumn fx:id="stockColumn" prefWidth="138.0" text="Stock (in Units)" />
+        </columns>
+      </TableView>
+      <Button fx:id="editProductNameBtn" layoutX="252.0" layoutY="258.0" mnemonicParsing="false" onAction="#editProductName" text="Edit a product Name" />
+      <Button fx:id="editProductIdBtn" layoutX="124.0" layoutY="258.0" mnemonicParsing="false" onAction="#editProductId" text="Edit a product Id" />
+      <Button fx:id="stockEditBtn" layoutX="123.0" layoutY="296.0" mnemonicParsing="false" onAction="#stockEdit" text="Add/Remove Stock" />
+      <Button fx:id="refreshTableBtn" layoutX="459.0" layoutY="296.0" mnemonicParsing="false" onAction="#refreshTable" text="Refesh Table" />
+      <Button fx:id="deleteProductBtn" layoutX="7.0" layoutY="296.0" mnemonicParsing="false" onAction="#DeleteProduct1" text="Delete Product" />
+      <Button fx:id="addProductBtn" layoutX="8.0" layoutY="258.0" mnemonicParsing="false" onAction="#addProduct1" text="Add Product" />
+   </children>
+</AnchorPane>

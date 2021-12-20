@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="406.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.viewProductController">
+    <children>
+        <Pane layoutX="-3.0" layoutY="1.0" prefHeight="48.0" prefWidth="462.0" style="-fx-background-color: #39A67F;">
+            <children>
+                <Label alignment="CENTER" layoutX="179.0" layoutY="12.0" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #39A67F;" text="View Products" />
+            </children>
+        </Pane>
+        <Button fx:id="viewByNameBtn" layoutX="303.0" layoutY="107.0" mnemonicParsing="false" onAction="#nameProductview" text="View Products" />
+      <Line endX="330.0" layoutX="129.0" layoutY="156.0" startX="-129.0" />
+      <TextField fx:id="viewByNameField" layoutX="154.0" layoutY="73.0" promptText="view product by name" />
+      <Button fx:id="viewByIdBtn" layoutX="303.0" layoutY="221.0" mnemonicParsing="false" onAction="#idProductview" text="View Products" />
+      <TextField fx:id="viewByIdField" layoutX="155.0" layoutY="178.0" promptText="view product by id" />
+      <Line endX="324.0" layoutX="134.0" layoutY="284.0" startX="-134.0" />
+      <TableView fx:id="productTable" layoutX="18.0" layoutY="296.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="82.0" prefWidth="429.0">
+         <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="153.0" text="Product Name" />
+            <TableColumn fx:id="idColumn" prefWidth="116.0" text="Product id" />
+            <TableColumn fx:id="stockColumn" prefWidth="158.0" text="Stock (in Units)" />
+         </columns>
+      </TableView>
+    </children>
+</AnchorPane>

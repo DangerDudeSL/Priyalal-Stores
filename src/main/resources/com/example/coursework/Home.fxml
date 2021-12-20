@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="430.0" prefWidth="736.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.HelloController">
+   <children>
+      <Pane layoutY="2.0" prefHeight="72.0" prefWidth="735.0" style="-fx-background-color: #39A67F;">
+         <children>
+            <MenuBar fx:id="menuBar" layoutX="302.0" layoutY="7.0" prefHeight="25.0" prefWidth="348.0" style="-fx-background-color: #39A67F;">
+              <menus>
+                <Menu mnemonicParsing="false" text="Categories">
+                  <items>
+                        <MenuItem fx:id="category1" mnemonicParsing="false" onAction="#category1" text="Add Category" />
+                    <MenuItem fx:id="category2" mnemonicParsing="false" onAction="#cattegory2" text="View Categories in a Table" />
+                        <MenuItem fx:id="category3" mnemonicParsing="false" onAction="#category3" text="Edit Category" />
+                        <MenuItem fx:id="category4" mnemonicParsing="false" onAction="#category4" text="Delete Category" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Product Management">
+                    <items>
+                        <MenuItem fx:id="product1" mnemonicParsing="false" onAction="#product1" text="Add product" />
+                      <MenuItem fx:id="product2" mnemonicParsing="false" onAction="#product2" text="Search for Product" />
+                        <MenuItem fx:id="product3" mnemonicParsing="false" onAction="#product3" text="View products" />
+                        <MenuItem fx:id="product4" mnemonicParsing="false" onAction="#product4" text="Edit products" />
+                        <MenuItem fx:id="product5" mnemonicParsing="false" onAction="#product5" text="Delete Product" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Stock Management">
+                     <items>
+                        <MenuItem fx:id="stock1" mnemonicParsing="false" onAction="#stock1" text="Add to stock" />
+                        <MenuItem fx:id="stock2" mnemonicParsing="false" onAction="#stock2" text="Remove from stock" />
+                        <MenuItem fx:id="stock3" mnemonicParsing="false" onAction="#stock3" text="View stock details of all products" />
+                        <MenuItem fx:id="stock4" mnemonicParsing="false" onAction="#stock4" text="View stock tables of a single product" />
+                     </items>
+                  </Menu>
+              </menus>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </MenuBar>
+            <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="185.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/shopping-venture-2523066_1920.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="logOutBtn" layoutX="650.0" layoutY="7.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: transparent;" text="Logout" />
+         </children>
+      </Pane>
+      <Pane layoutY="2.0" prefHeight="432.0" prefWidth="154.0" style="-fx-background-color: #39A78F;">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="10.0" layoutY="7.0" prefHeight="41.0" prefWidth="107.0" text="Home">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="32.0" layoutY="103.0" prefHeight="43.0" prefWidth="91.0" text="Quick Access">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+            <Line endX="52.0" layoutX="101.0" layoutY="72.0" startX="-100.0" strokeWidth="2.0" />
+            <Button fx:id="categoryManagementBtn" layoutX="8.0" layoutY="200.0" mnemonicParsing="false" onAction="#categoryManagement" text="Category Management" />
+            <Button fx:id="procudtAndStockManagementBtn" layoutX="4.0" layoutY="260.0" mnemonicParsing="false" onAction="#productAndStockManagement" text="Product &amp; Stock Management">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <ImageView fitHeight="358.0" fitWidth="581.0" layoutX="155.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/PriyalalStores.png" />
+         </image></ImageView>
+      <Line endX="480.0" layoutX="255.0" layoutY="74.0" startX="-100.0" strokeWidth="2.0" />
+      <Line endX="-120.0" endY="-125.0" layoutX="274.0" layoutY="199.0" startX="-120.0" startY="231.0" strokeWidth="2.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="424.0" prefWidth="316.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.DeleteProductController">
+    <children>
+        <Pane layoutX="-3.0" layoutY="1.0" prefHeight="48.0" prefWidth="322.0" style="-fx-background-color: #39A67F;">
+            <children>
+                <Label alignment="CENTER" layoutX="78.0" layoutY="12.0" prefHeight="25.0" prefWidth="167.0" style="-fx-background-color: #39A67F;" text="Delete product using Name" />
+            </children>
+        </Pane>
+        <Button fx:id="DeleteByNameBtn" layoutX="200.0" layoutY="167.0" mnemonicParsing="false" onAction="#DeleteByName" text="Remove Product" />
+        <Button fx:id="DeleteByIdBtn" layoutX="203.0" layoutY="378.0" mnemonicParsing="false" onAction="#DeleteById" text="Remove Product" />
+        <Pane layoutX="1.0" layoutY="212.0" prefHeight="48.0" prefWidth="322.0" style="-fx-background-color: #39A67F;">
+            <children>
+                <Label alignment="CENTER" layoutX="78.0" layoutY="12.0" prefHeight="25.0" prefWidth="167.0" style="-fx-background-color: #39A67F;" text="Delete Product Using Id" />
+            </children>
+        </Pane>
+        <Label fx:id="DeleteByIdLbl" alignment="CENTER" layoutX="14.0" layoutY="355.0" prefHeight="17.0" prefWidth="282.0" />
+        <Label fx:id="DeleteByNameLbl" alignment="CENTER" layoutX="18.0" layoutY="150.0" prefHeight="17.0" prefWidth="282.0" />
+        <TextField fx:id="DeleteByIdField" layoutX="57.0" layoutY="281.0" prefHeight="25.0" prefWidth="188.0" promptText="Enter the Product Id" />
+        <TextField fx:id="DeleteByNameField" layoutX="64.0" layoutY="79.0" prefHeight="25.0" prefWidth="188.0" promptText="Enter the Product Name" />
+        <Button fx:id="DeleteBYNameCleaarBtn" layoutX="39.0" layoutY="167.0" mnemonicParsing="false" onAction="#DeleteByNameClear" text="Clear" />
+        <Button fx:id="DeleteByIdClearBtn" layoutX="31.0" layoutY="378.0" mnemonicParsing="false" onAction="#DeleteByIdClear" text="Clear" />
+    </children>
+</AnchorPane>
